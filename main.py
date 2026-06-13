@@ -9,7 +9,7 @@ def analyze_sentiment(text):
         return "Neutral"
 
 
-def count_positive(reviews):
+def count_sentiments(reviews):
     stats = {
         "Positive": 0,
         "Negative": 0,
@@ -24,17 +24,17 @@ def count_positive(reviews):
 
 
 with open("reviews.txt", "r") as f:
-     reviews = f.readlines()
+    reviews = f.readlines()
 
-for review in reviews:
-    review = review.strip()
-    result = analyze_sentiment(review)
-    print(review + " -> " + result)
+stats = count_sentiments(reviews)
 
-stats = count_positive(reviews)
-print()
+with open("results.txt", "w") as file:
+    for review in reviews:
+        review = review.strip()
+        result = analyze_sentiment(review)
+        file.write(review + " -> " + result + "\n")
 
-print("Positive:", stats["Positive"])
-print("Negative:", stats["Negative"])
-print("Neutral:", stats["Neutral"])
-
+    file.write("\n")
+    file.write(f"Positive: {stats['Positive']}\n")
+    file.write(f"Negative: {stats['Negative']}\n")
+    file.write(f"Neutral: {stats['Neutral']}\n")
