@@ -77,7 +77,21 @@
       <option name="project" value="LOCAL" />
       <updated>1781350786915</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Reviews are read from CVS file now">
+      <created>1781461951412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1781461951412</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Reviews are now saved in CSV file and statistics are saved in a separate file &quot;summary.txt&quot;">
+      <created>1781462565951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1781462565951</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +109,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init create" />
     <MESSAGE value="saves in new file" />
-    <option name="LAST_COMMIT_MESSAGE" value="saves in new file" />
+    <MESSAGE value="Reviews are read from CVS file now" />
+    <MESSAGE value="Reviews are now saved in CSV file and statistics are saved in a separate file &quot;summary.txt&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reviews are now saved in CSV file and statistics are saved in a separate file &quot;summary.txt&quot;" />
   </component>
 </project>
