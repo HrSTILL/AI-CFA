@@ -1,3 +1,5 @@
+import csv
+
 def analyze_sentiment(text):
     text = text.lower()
 
@@ -23,14 +25,18 @@ def count_sentiments(reviews):
     return stats
 
 
-with open("reviews.txt", "r") as f:
-    reviews = f.readlines()
+reviews = []
+
+with open("reviews.csv", "r") as file:
+    reader = csv.DictReader(file)
+
+    for row in reader:
+        reviews.append(row["Review"])
 
 stats = count_sentiments(reviews)
 
 with open("results.txt", "w") as file:
     for review in reviews:
-        review = review.strip()
         result = analyze_sentiment(review)
         file.write(review + " -> " + result + "\n")
 
