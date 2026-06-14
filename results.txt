@@ -1,9 +1,0 @@
-Great product -> Positive
-Bad service -> Negative
-Very useful app -> Neutral
-Great support -> Positive
-Bad delivery -> Negative
-
-Positive: 2
-Negative: 2
-Neutral: 1
